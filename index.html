@@ -1,26 +1,61 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between h-16 md:h-20">
+      <a href="/" class="font-heading text-2xl md:text-3xl font-semibold">ATELIER</a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="/" class="text-sm font-medium text-muted-foreground">Shop</a>
+        <a href="/" class="text-sm font-medium text-muted-foreground">Collections</a>
+        <a href="/" class="text-sm font-medium text-muted-foreground">About</a>
+      </nav>
+      <button class="relative"><svg><!-- ShoppingBag icon --></svg></button>
+    </div>
+  </div>
+</header>
 
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Lovable App" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex items-center gradient-hero">
+  <div class="container mx-auto px-4">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="max-w-xl">
+        <span class="text-sm uppercase tracking-widest">New Collection 2026</span>
+        <h1 class="font-heading text-5xl md:text-7xl font-semibold">Timeless<br><span class="text-accent">Craftsmanship</span></h1>
+        <p class="text-lg text-muted-foreground">Discover our curated selection...</p>
+        <button class="bg-accent text-accent-foreground">Shop Now</button>
+      </div>
+      <div class="aspect-[4/5] overflow-hidden rounded-sm shadow-elevated">
+        <img src="..." alt="Featured collection" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </div>
+</section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+<!-- Product Grid -->
+<section id="products" class="py-20 bg-secondary/30">
+  <div class="container mx-auto px-4">
+    <h2 class="font-heading text-4xl text-center mb-12">Our Collection</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Product Card -->
+      <div class="group relative">
+        <div class="aspect-[3/4] overflow-hidden bg-muted rounded-sm mb-4">
+          <img src="..." alt="Product" class="w-full h-full object-cover">
+        </div>
+        <p class="text-xs text-muted-foreground uppercase">Category</p>
+        <h3 class="font-heading text-lg font-medium">Product Name</h3>
+        <p class="text-muted-foreground font-medium">$128</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<!-- Footer -->
+<footer class="bg-primary text-primary-foreground py-16">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div><a href="/" class="font-heading text-2xl">ATELIER</a></div>
+      <div><h4>Shop</h4><ul><li><a href="/">All Products</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="/">About Us</a></li></ul></div>
+      <div><h4>Support</h4><ul><li><a href="/">FAQ</a></li></ul></div>
+    </div>
+  </div>
+</footer>
